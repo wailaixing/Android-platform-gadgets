@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="请输入下载文件的路径"   />
+	    
+
+	<EditText 
+	    android:id="@+id/et_path"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="http://" />
+	
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="请输入线程数"   />
+	
+	<EditText 
+	    android:inputType="number"
+	    android:id="@+id/et_count"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="3" />
+	
+	<Button
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Go"
+	    android:onClick="download" />
+	
+	<LinearLayout
+	    android:orientation="vertical"
+	    android:id="@+id/ll_container"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent" >
+
+    </LinearLayout>
+</LinearLayout>
